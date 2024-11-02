@@ -254,9 +254,9 @@ impl Worksheet {
                 CellValue::DateTime(datetime, format)
                 // format!("{}", datetime.format(&format))
             }
-            s => {
+            _ => {
                 // FIXME(@zitsen): support custom format like dollars, etc.
-                eprintln!("unimplemented format support: {}", s);
+                // eprintln!("unimplemented format support: {}", s);
                 CellValue::String(raw.to_string())
             }
         };
