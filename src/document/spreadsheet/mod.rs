@@ -29,11 +29,12 @@ use self::{
     worksheet::SheetCol,
 };
 
-use self::cell::CellValue;
 use self::shared_string::SharedStringsPart;
 use self::style::StylesPart;
 use self::workbook::WorkbookPart;
 use self::worksheet::WorksheetPart;
+
+pub use self::cell::CellValue;
 
 #[derive(Derivative, Clone, Default)]
 #[derivative(Debug)]
